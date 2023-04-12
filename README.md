@@ -10,4 +10,8 @@ npx husky install
 npx husky add .husky/pre-commit "pnpm lint"
 npx husky add .husky/commit-msg "npx --no-install commitlint -e $HUSKY_GIT_PARAMS"
 npx tsc --init
+
+pnpm link --global
+npx create-react-app react-demo
+pnpm link react --global
 ```
